@@ -17,13 +17,10 @@
     "cordova",
     "ecosystem:cordova",
     "cordova-android",
-    "cordova-ios",
     "cordova-windows"
   ],
   "platforms": [
-    "ios",
-    "android",
-    "windows"
+    "android"
   ],
   "engines": [
     {
@@ -33,10 +30,6 @@
     {
       "name": "cordova-plugman",
       "version": ">=4.3.0"
-    },
-    {
-      "name": "cordova-windows",
-      "version": ">=4.2.0"
     }
   ],
   "dependencies": {
