@@ -419,12 +419,8 @@ exports.getAllTriggered = function (callback, scope) {
 exports.hasPermission = function (callback, scope) {
     var fn = this.createCallbackFn(callback, scope);
 
-    if (device.platform != 'iOS') {
-        fn(true);
-        return;
-    }
-
-    exec(fn, null, 'LocalNotification', 'hasPermission', []);
+    fn(true);
+    return;
 };
 
 /**
@@ -445,12 +441,8 @@ exports.registerPermission = function (callback, scope) {
 
     var fn = this.createCallbackFn(callback, scope);
 
-    if (device.platform != 'iOS') {
-        fn(true);
-        return;
-    }
-
-    exec(fn, null, 'LocalNotification', 'registerPermission', []);
+    fn(true);
+    return;
 };
 
 
